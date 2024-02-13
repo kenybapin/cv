@@ -8,346 +8,203 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap">
 </head>
+
+
 <body>
-  <svg preserveaspectratio="xMidYMid slice" viewbox="10 10 80 80">
-  <path fill="#dadfe6" class="out-top" d="M37-5C25.1-14.7,5.7-19.1-9.2-10-28.5,1.8-32.7,31.1-19.8,49c15.5,21.5,52.6,22,67.2,2.3C59.4,35,53.7,8.5,37-5Z"></path>
-  <path fill="#cdd5df" class="in-top" d="M20.6,4.1C11.6,1.5-1.9,2.5-8,11.2-16.3,23.1-8.2,45.6,7.4,50S42.1,38.9,41,24.5C40.2,14.1,29.4,6.6,20.6,4.1Z"></path>
-  <path fill="#bac6d4" class="out-bottom" d="M105.9,48.6c-12.4-8.2-29.3-4.8-39.4.8-23.4,12.8-37.7,51.9-19.1,74.1s63.9,15.3,76-5.6c7.6-13.3,1.8-31.1-2.3-43.8C117.6,63.3,114.7,54.3,105.9,48.6Z"></path>
-  <path fill="#9faec2" class="in-bottom" d="M102,67.1c-9.6-6.1-22-3.1-29.5,2-15.4,10.7-19.6,37.5-7.6,47.8s35.9,3.9,44.5-12.5C115.5,92.6,113.9,74.6,102,67.1Z"></path></svg>
+
+  <div class="navbar">
+    <a href="#exp">Expérience</a>
+    <a href="#projects">Projets</a>
+    <a href="#skills">Skills</a>
+    <a href="#formations">Formations</a>
+  </div>
+
+<container> 
   <header>
-    <div class="avatar"><img src="img/avatar.png" alt="avatar"></div>
-    <h1>Keny Bapin</h1>
-    <h3>Ingénieur Systèmes Freelance</h3>
-    <p class="contact">Paris, Ile-de-france | +33665687736 | keny.bapin@gmail.com</p>
-    <div class="links">
-      <a href="javascript:window.print()">Imprimer</a><a href="https://www.linkedin.com/in/keny-bapin-94615779/" target="_blank">Linkedin</a><a href="https://github.com/kenybapin" target="_blank">Github</a>
+    <div class="avatar"><img src="img/avatar.png" alt="avatar">
+      <h1>Keny Bapin</h1>
+      <h3>Ingénieur Systèmes Freelance</h3>
+      <p class="contact">Paris, Ile-de-france | 0665687736 | keny.bapin@gmail.com</p>
+      <div class="links"><a href="javascript:window.print()">Imprimer mon CV</a><a href="https://www.linkedin.com/in/keny-bapin-94615779/" target="_blank">Linkedin</a><a href="https://github.com/kenybapin" target="_blank">Github</a></div>
+      <div id="exp"></div>
     </div>
+    
   </header>
+
   <section class="experience">
     <h2>Expérience Professionnelle</h2>
-    <table class="table_experience">
-      <tbody>
-        <tr>
-          <td class="yearColumn">2023</td>
-          <td>
-            <div class="infoBlock">
-              <p class="company">Freelance</p>
-              <p class="job">Ingénieur systèmes</p>
-              <p class="location">Paris, Ile-de-france</p>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td>&nbsp;</td>
-        </tr><!-- <> -->
-        <tr>
-          <td class="yearColumn">2022<br>
-          2020</td>
-          <td>
-            <div class="infoBlock">
-              <p class="company">Groupement d'Achats E.LECLERC</p>
-              <p class="job">Ingénieur systèmes</p>
-              <p class="location">CDI - Ivry-sur-Seine</p>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td>&nbsp;</td>
-          <td>
-            <div class="description">
-              <ul>
-                <li>Responsable de l'infrastructure Linux : support N3, scripting, automatisation, création de procédures, formations et conseils aux équipes support N2 et métiers</li>
-                <li>Gestion de l'infrastructure sur Red Hat Satellite : configuration des environnments, déploiement de correctifs, suivi de la conformité et du coûts des licences</li>
-                <li>Automatiser et orchestrer l'installation de mises à jour sur Windows Server et Linux (Ansible)</li>
-                <li>Refonte du processus de déploiement de serveurs : Automatisation (Ansible), Intégration continue (GitLab), création de machines virtuelles et d'images système (Vmware, Packer), intégration dans les différents outils de gestion d'infrastructure (Red Hat Satellite, Centreon, Keepass)</li>
-                <li>Mise en place d'une plateforme dédiée à l'automatisation (AWX) : Création de procédures, formations equipes infrastructure et Support N2</li>
-                <p class="tools">Red Hat Entreprise, Redhat Satellite 6, AWX, Git, Packer, Terraform, Python, Vmware ESXi, Vmware vSphere, Azure Devops, Ansible, Jira</p>
-              </ul>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td>&nbsp;</td><!-- <> -->
-        </tr>
-        <tr>
-          <td class="yearColumn">2020<br>
-          2019</td>
-          <td>
-            <div class="infoBlock">
-              <p class="company">Total Energies</p>
-              <p class="job">Ingénieur de production</p>
-              <p class="location">CDI - Paris</p>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td>&nbsp;</td>
-          <td>
-            <div class="description">
-              <ul>
-                <li>Support N2 et N3 (Linux), scripting, automatisation de taches correctives (Bash, Python) et monitoring (Dynatrace, ScienceLogic).</li>
-                <li>Maintient de la production : Mise en production applicative (Tomcat Wildfly,Jenkins), Maintenance préventive des applications et amélioration continue.</li>
-                <li>Accompagnement d'une équipe métier dans le contexte d'une démarche DevOps : Collecte de logs, création de graphiques, gestion des alertes et envoi de rapport journalier (Elastic), Amélioration des procédures de mise en production (Red hat, Jenkins, Wildfy). Automatisation et intégration continue pour le déploiement de serveurs (Puppet, Bitbucket, Jenkins, Foreman)</li>
-                <p class="tools">Foreman, Jenkins, Bitbucket, Sciencelogic, Dynatrace, Elastic, Puppet, Confluence, Jira, Python, Bash, Vmware, Redhat, Netapp, Apache, Docker, Postgresql, redhat Entreprise Linux, Tomcat Wildfly</p>
-              </ul>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td></td>
-        </tr>
-      </tbody>
-    </table>
+
+     <div class="infoBlock">
+       <p class="company">Freelance</p>
+       <p class="job">Ingénieur systèmes</p>
+       <p class="location"><span>2023</span>Paris, Ile-de-france</p>
+     </div><br>
+
+
+     <div class="infoBlock">
+       <p class="company">Groupement d'Achats E.LECLERC</p>
+       <p class="job">Ingénieur systèmes</p>
+       <p class="location"><span>2020 - 2022</span>CDI - Ivry-sur-Seine</p>
+     </div>
+     <div class="description">
+       <ul>
+         <li>Responsable de l'infrastructure Linux : support N3, scripting, automatisation, création de procédures, formations et conseils aux équipes support N2 et métiers</li>
+         <li>Gestion de l'infrastructure sur Red Hat Satellite : configuration des environnments, déploiement de correctifs, suivi de la conformité et du coûts des licences</li>
+         <li>Automatiser et orchestrer l'installation de mises à jour sur Windows Server et Linux (Ansible)</li>
+         <li>Refonte du processus de déploiement de serveurs : Automatisation (Ansible), Intégration continue (GitLab), création de machines virtuelles et d'images système (Vmware, Packer), intégration dans les différents outils de gestion d'infrastructure (Red Hat Satellite, Centreon, Keepass)</li>
+         <li>Mise en place d'une plateforme dédiée à l'automatisation (AWX) : Création de procédures, formations equipes infrastructure et Support N2</li>
+         <p class="tools">Red Hat Entreprise, Redhat Satellite 6, AWX, Git, Packer, Terraform, Python, Vmware ESXi, Vmware vSphere, Azure Devops, Ansible, Jira</p>
+       </ul>
+     </div>
+     
+     <div class="infoBlock">
+       <p class="company">Total Energies</p>
+       <p class="job">Ingénieur de production</p>
+       <p class="location"><span>2019 - 2020</span>CDI - Paris</p>
+     </div>
+     <div class="description">
+       <ul>
+         <li>Support N2 et N3 (Linux), scripting, automatisation de taches correctives (Bash, Python) et monitoring (Dynatrace, ScienceLogic).</li>
+         <li>Maintient de la production : Mise en production applicative (Tomcat Wildfly,Jenkins), Maintenance préventive des applications et amélioration continue.</li>
+         <li>Accompagnement d'une équipe métier dans le contexte d'une démarche DevOps : Collecte de logs, création de graphiques, gestion des alertes et envoi de rapport journalier (Elastic), Amélioration des procédures de mise en production (Red hat, Jenkins, Wildfy). Automatisation et intégration continue pour le déploiement de serveurs (Puppet, Bitbucket, Jenkins, Foreman)</li>
+         <p class="tools">Foreman, Jenkins, Bitbucket, Sciencelogic, Dynatrace, Elastic, Puppet, Confluence, Jira, Python, Bash, Vmware, Redhat, Netapp, Apache, Docker, Postgresql, redhat Entreprise Linux, Tomcat Wildfly</p>
+       </ul>
+     </div>
+
+
     <div class="pagebreak"></div>
-    <table class="table_experience">
-      <tbody>
-        <tr>
-          <td class="yearColumn">2019<br>
-          2017</td>
-          <td>
-            <div class="infoBlock">
-              <p class="company">SFR-Altice</p>
-              <p class="job">Ingénieur d'exploitation applicative</p>
-              <p class="location">CDI - Paris</p>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>
-            <div class="description">
-              <ul>
-                <li>Ingénieur opérationel au sein de l'équipe Exploitation Applicative Business to Business (EAB2B). Support N2 sur les bases de données du CRM entreprise . Automatisation de tâches (PL/SQL), création de procédures et formation des équipes support.</li>
-                <li>Participation a differents projets de migration client entreprise (B2B) dans le contexte de la fusion avec Numericable. Collaboration avec les équipes métier et l'équipe CRM.</li>
-                <li>Analyse des journaux d'événements serveurs (ElasticSearch, Kibana).</li>
-                <p class="tools">SQL Developer, Pl/Sql, TOAD for Oracle, Amdocs CRM, Putty, Winscp, Excel, Redhat 5/6, Centos, Oracle11g, Kibana, Elasticsearch, Bash, Informatica</p>
-              </ul>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td>&nbsp;</td><!-- <> -->
-        </tr>
-        <tr>
-          <td class="yearColumn">2016<br>
-          2014</td>
-          <td>
-            <div class="infoBlock">
-              <p class="company">SFR-Altice</p>
-              <p class="job">Chef de projet - Ingénieur Systèmes</p>
-              <p class="location">Contrat d'apprentissage - Paris</p>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td>&nbsp;</td>
-          <td>
-            <div class="description">
-              <ul>
-                <li>Chef de projet au sein de l'équipe Intégration et Validation. Pilotage de projets sur l'evolution et la non regression d'applications métier B2B (Eligibilité, Soucription, Portabilité, Installation). Suivi et pilotage des campagnes de refresh de bases de données</li>
-                <li>Ingénieur systèmes : Responsable des serveurs de l'environnment Intégration et validation, Support N2 sur Linux et Windows, Gestion et validation de l'infrastructure (modifications, ajouts et decomissionment de serveurs).</li>
-                <li>Projet d'automatisation des tests de non regression via Robot Framework et Selenium, création de procédures et formation des équipes.</li>
-                <p class="tools">Redhat, Centos, Windows Server, Oracle 11g, Robot Framework, Selenium UI</p>
-              </ul>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td>&nbsp;</td><!-- <> -->
-        </tr>
-        <tr>
-          <td class="yearColumn">2013<br>
-          2012</td>
-          <td>
-            <div class="infoBlock">
-              <p class="company">MiunyGames</p>
-              <p class="job">Ingénieur systèmes et virtualisation</p>
-              <p class="location">Stage et CDD - Paris</p>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td>&nbsp;</td>
-          <td>
-            <div class="description">
-              <ul>
-                <li>Ingénieur systèmes et virtualisation dans la startup MiunyGames : Support systèmes, Présentation, diffusion et mise en œuvre des pratiques ITIL. Installaion d'un gestionnaire de parc informatique (GLPI). Migration du parc de serveurs. Céation de procédures</li>
-                <li>Installation d'une infrastructure dédiée à la paravirtualisation. comparatif des performances 3D sur VMware ESXi et Xen : configuration des VM pour un accès au GPU physique. Tests de performances 3D via différents benchmark.</li>
-                <p class="tools">Vmware, Xen Server, KVM, libvirt, Ubuntu, Ocs Inventory, GLPI</p>
-              </ul>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td>&nbsp;</td><!-- <> -->
-        </tr>
-        <tr>
-          <td class="yearColumn">2011</td>
-          <td>
-            <div class="infoBlock">
-              <p class="company">Ministère des sports</p>
-              <p class="job">Administrateur systèmes</p>
-              <p class="location">Stage - Paris</p>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td>&nbsp;</td>
-          <td>
-            <div class="description">
-              <ul>
-                <li>Support et résolution d'incidents N1/N2 dans l'équipe Helpdesk (Windows 7, Windows Server)</li>
-                <li>Administration systèmes Windows Server. Participation à la migration d'un annuaire Active directory (Windows Server 2003 vers Windows Sevrer 2011)</li>
-                <li>Configuration d'images système via un serveur PXE (Symantec norton ghost)</li>
-                <p class="tools">Windows Server 2008, Windows 7, Northon Ghost, Redhat</p>
-              </ul>
-            </div>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </section>
+
+
+    <div class="infoBlock">
+      <p class="company">SFR-Altice</p>
+      <p class="job">Ingénieur d'exploitation applicative</p>
+      <p class="location"><span>2017 - 2019</span>CDI - Paris</p>
+    </div>
+    <div class="description">
+      <ul>
+        <li>Ingénieur opérationel au sein de l'équipe Exploitation Applicative Business to Business (EAB2B). Support N2 sur les bases de données du CRM entreprise . Automatisation de tâches (PL/SQL), création de procédures et formation des équipes support.</li>
+        <li>Participation a differents projets de migration client entreprise (B2B) dans le contexte de la fusion avec Numericable. Collaboration avec les équipes métier et l'équipe CRM.</li>
+        <li>Analyse des journaux d'événements serveurs (ElasticSearch, Kibana).</li>
+        <p class="tools">SQL Developer, Pl/Sql, TOAD for Oracle, Amdocs CRM, Putty, Winscp, Excel, Redhat 5/6, Centos, Oracle11g, Kibana, Elasticsearch, Bash, Informatica</p>
+      </ul>
+    </div>
+    
+    <div class="infoBlock">
+      <p class="company">SFR-Altice</p>
+      <p class="job">Chef de projet - Ingénieur Systèmes</p>
+      <p class="location"><span>2014 - 2016</span>Contrat d'apprentissage - Paris</p>
+    </div>
+    <div class="description">
+      <ul>
+        <li>Chef de projet au sein de l'équipe Intégration et Validation. Pilotage de projets sur l'evolution et la non regression d'applications métier B2B (Eligibilité, Soucription, Portabilité, Installation). Suivi et pilotage des campagnes de refresh de bases de données</li>
+        <li>Ingénieur systèmes : Responsable des serveurs de l'environnment Intégration et validation, Support N2 sur Linux et Windows, Gestion et validation de l'infrastructure (modifications, ajouts et decomissionment de serveurs).</li>
+        <li>Projet d'automatisation des tests de non regression via Robot Framework et Selenium, création de procédures et formation des équipes.</li>
+        <p class="tools">Redhat, Centos, Windows Server, Oracle 11g, Robot Framework, Selenium UI</p>
+      </ul>
+    </div>
+    
+    <div class="infoBlock">
+      <p class="company">MiunyGames</p>
+      <p class="job">Ingénieur systèmes et virtualisation</p>
+      <p class="location"><span>2012 - 2013</span>Stage et CDD - Paris</p>
+    </div>
+    <div class="description">
+      <ul>
+        <li>Support systèmes, Présentation, diffusion et mise en œuvre des pratiques ITIL. Installaion d'un gestionnaire de parc informatique (GLPI). Migration du parc de serveurs. Céation de procédures. Installation d'une infrastructure dédiée à la paravirtualisation. comparatif des performances 3D sur VMware ESXi et Xen : configuration des VM pour un accès au GPU physique. Tests de performances 3D via différents benchmark.</li>
+        <p class="tools">Vmware, Xen Server, KVM, libvirt, Ubuntu, Ocs Inventory, GLPI</p>
+      </ul>
+    </div>
+    
+    <div class="infoBlock">
+      <p class="company">Ministère des sports</p>
+      <p class="job">Administrateur systèmes</p>
+      <p class="location"><span>2011</span>Stage - Paris</p>
+    </div>
+    
+    <div class="description">
+      <ul>
+        <li>Support et résolution d'incidents N1/N2 Windows 7 et Windows Server. Administration d'un annuaire Active directory. Participation à la migration d'un Windows Server 2003 vers 2011. Configuration d'images système via un serveur PXE (Symantec norton ghost)</li>
+        <p class="tools">Windows Server 2003/2011, Windows 7, Northon Ghost, Redhat</p>
+        <div id="projects"></div>
+      </ul>
+    </div>
+  </section>        
+  
   <div class="pagebreak"></div>
+  
+  
   <section class="projects">
     <h2>Réalisations techniques</h2>
-    <table class="table_projects">
-      <tbody>
-        <tr>
-          <td><a href="https://github.com/kenybapin/kubernetes-cluster-vagrant-ansible">Deploiment d'un cluster Kubernetes pret à l'emploi</a><br>
-          <span>Ansible, Vagrant, Ubuntu, VirtualBox, Kubernetes</span></td>
-        </tr>
-        <tr>
-          <td><a href="https://github.com/kenybapin/cicd-pipeline-java-spring-docker">Pipeline CI/CD pour la mise en service d'une application Java</a><br>
-          <span>Gitlab, Jenkins, Maven, Docker, Java Springboot</span></td>
-        </tr>
-        <tr>
-          <td><a href="https://github.com/kenybapin/docker-flask-api">Conception d'une API REST avec PostgreSQL</a><br>
-          <span>Python, Flask, PostgreSQL, Docker</span></td>
-        </tr>
-        <tr>
-          <td><a href="https://github.com/kenybapin/flask-spotify-app">Récapitulatif de vos préférences musicales sur Spotify</a><br>
-          <span>Python, Flask, HTML/CSS3, API Spotify</span></td>
-        </tr>
-        <tr>
-          <td><a href="https://github.com/kenybapin/ansible-sys-updates">Gestion de mise à jour systèmes pour Windows et Linux</a><br>
-          <span>Ansible, Windows Server, Red Hat Enterprise</span></td>
-        </tr>
-        <tr>
-          <td><a href="https://github.com/kenybapin/awx-install">Déploiement d'une plateforme AWX pret à l'emploi</a><br>
-          <span>Ansible, Vagrant, Virtualbox, Ubuntu, Docker, Kubernetes</span></td>
-        </tr>
-      </tbody>
-    </table>
-  </section>
+<li><a href="https://github.com/kenybapin/kubernetes-cluster-vagrant-ansible">Deploiment d'un cluster Kubernetes pret à l'emploi</a><br><span>Ansible, Vagrant, Ubuntu, VirtualBox, Kubernetes</span></li>
+<li><a href="https://github.com/kenybapin/cicd-pipeline-java-spring-docker">Pipeline CI/CD pour la production d'une application</a><br><span>Gitlab, Jenkins, Maven, Docker, Java Springboot</span></li>
+<li><a href="https://github.com/kenybapin/docker-flask-api">Conception d'une API REST avec PostgreSQL</a><br><span>Python, Flask, PostgreSQL, Docker</span></li>
+<li><a href="https://github.com/kenybapin/flask-spotify-app">Récapitulatif de vos préférences musicales sur Spotify</a><br><span>Python, Flask, HTML/CSS3, API Spotify</span></li>
+<li><a href="https://github.com/kenybapin/ansible-sys-updates">Gestion de mise à jour systèmes pour Windows et Linux</a><br><span>Ansible, Windows Server, Red Hat Enterprise</span></li>
+<li><a href="https://github.com/kenybapin/awx-install">Déploiement d'une plateforme AWX</a><br><span>Ansible, Vagrant, Virtualbox, Ubuntu, Docker, Kubernetes</span></li>
+<div id="skills"></div>
+</section>
+  
+
   <section class="skills">
     <h2>Compétences</h2>
-    <table class="table_skills">
-      <tbody>
-        <tr>
-          <td>Compétences métier</td>
-          <td><span>Linux</span><span>Scripting</span> <span>Automatisation</span> <span>Virtualisation</span></td>
-        </tr>
-        <tr>
-          <td>Systèmes</td>
-          <td><span>GNU/Linux</span> <span>Debian</span> <span>Red Hat</span> <span>CentOS</span></td>
-        </tr>
-        <tr>
-          <td>Langages</td>
-          <td><span>Python</span> <span>Bash</span> <span>HTML/CSS</span> <span>PHP</span></td>
-        </tr>
-        <tr>
-          <td>CI/CD</td>
-          <td><span>Gitlab-CI</span> <span>Azure Devops</span> <span>Jenkins</span></td>
-        </tr>
-        <tr>
-          <td>Gestion d'infra</td>
-          <td><span>Foreman</span> <span>Redhat Satellite</span></td>
-        </tr>
-        <tr>
-          <td>Virtualisation</td>
-          <td><span>Xen</span> <span>VMware ESXi</span> <span>KVM</span></td>
-        </tr>
-        <tr>
-          <td>Conteneurs</td>
-          <td><span>Docker</span> <span>Kubernetes</span></td>
-        </tr>
-        <tr>
-          <td>Monitoring</td>
-          <td><span>Dynatrace</span> <span>Nagios</span> <span>Elastic</span></td>
-        </tr>
-        <tr>
-          <td>Bases de données</td>
-          <td><span>PostgreSQL</span> <span>MySQL</span> <span>MongoDB</span></td>
-        </tr>
-        <tr>
-          <td>Services réseaux</td>
-          <td><span>Apache</span> <span>Nginx</span> <span>Iptables</span></td>
-        </tr>
-        <tr>
-          <td>Cloud Computing</td>
-          <td><span>Google Cloud Plateform</span></td>
-        </tr>
-      </tbody>
-    </table>
+    <li>Systèmes<br><span>GNU / Linux / Debian / Red Hat / CentOS</span></li>
+    <li>Langages</br><span>Python / Bash / HTML / CSS / PHP</span></li>
+    <li>Intégration et déploiement continue<br><span>Gitlab-CI / Azure Devops / Jenkins</span></li>
+    <li>Gestion d'infrastructure<br><span>Foreman / Redhat Satellite</span></li>
+    <li>Virtualisation<br><span>Xen / VMware ESXi / KVM</span></li>
+    <li>Conteneurs<br><span>Docker / Kubernetes</span></li>
+    <li>Monitoring<br><span>Dynatrace / Nagios / Elastic</span></li>
+    <li>Bases de données<br><span>PostgreSQL / MySQL / MongoDB</span></li>
+    <li>Services réseaux<br><span>Apache / Nginx / Iptables</span></li>
+    <li>Cloud Computing<br><span>Google Cloud Plateform</span></li>
+    <div id="formations"></div>
   </section>
+
   <div class="pagebreak"></div>
+  
+  
   <section class="education">
     <h2>Formations et langues</h2>
-    <table class="table_formations">
-      <tbody>
-        <tr class="tableRow">
-          <td class="yearColumn">2020&nbsp;</td>
-          <td>
             <div class="infoBlock">
               <p class="diploma">Master 2 - Systèmes réseaux et cloud computing</p>
-              <p class="school">Paris, Ecole Supérieure de Génie Informatique (ESGI)</p>
+              <p class="school"><span>2016</span>Paris, Ecole Supérieure de Génie Informatique</p>
             </div>
-          </td>
-        </tr><!---->
-        <tr class="tableRow">
-          <td class="yearColumn">2010&nbsp;</td>
-          <td>
+         
             <div class="infoBlock">
               <p class="diploma">Bachelor - Systèmes réseaux et cloud computing</p>
-              <p class="school">Paris, Ecole Supérieure de Génie Informatique (ESGI)</p>
+              <p class="school"><span>2014</span>Paris, Ecole Supérieure de Génie Informatique</p>
             </div>
-          </td>
-        </tr><!---->
-        <tr class="tableRow">
-          <td class="yearColumn">2013&nbsp;</td>
-          <td>
+          
             <div class="infoBlock">
               <p class="diploma">BTS - Service informatique aux orgnaisations</p>
-              <p class="school">Nogent-sur-marne, Lycée Louis Armand</p>
+              <p class="school"><span>2013</span>Nogent-sur-marne, Lycée Louis Armand</p>
             </div>
-          </td>
-        </tr><!---->
-        <tr class="tableRow">
-          <td class="yearColumn">2010&nbsp;</td>
-          <td>
+          
             <div class="infoBlock">
-              <p class="diploma">Baccalauréat général Comptabilité et finances d'entreprise</p>
-              <p class="school">Rosny-sous-bois, Lycée Charles de gaulle</p>
-            </div>
-          </td>
-        </tr><!---->
-        <tr class="tableRow">
-          <td class="yearColumn">Langues&nbsp;</td>
-          <td>
+              <p class="diploma">BAC Général - Comptabilité et finances d'entreprise</p>
+              <p class="school"><span>2010</span>Rosny-sous-bois, Lycée Charles de gaulle</p>
+            </div><br>
+         
             <div class="infoBlock">
-              <p class="school">Francais: langue maternelle<br>
-              Anglais: niveau professionnel (TOEIC 830/990)</p>
+              <p class="school">Francais: langue maternelle<br>Anglais: niveau professionnel (TOEIC 830/990)</p>
             </div>
-          </td>
-        </tr>
-      </tbody>
-    </table>
+          
   </section>
+
   <section class="hobbies">
     <h2>Centres d'interets</h2>
     <div>
       <p>Nouvelles Technologies, Musique, Arts, Web Design, Cinéma, Jeux d'arcade</p>
+      <br><br><br>
     </div>
   </section>
+
+</container> 
+
+<footer>
+  <p><a href="#top">top</a></p>
+  <p>© Keny Bapin</p>
+</footer>
+
 </body>
 </html>
