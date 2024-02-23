@@ -7,44 +7,56 @@
   <title>Ingénieur Systèmes Linux Freelance</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 
 
 <body>
 
+
   <div class="navbar">
-    <a href="#exp">Expérience</a>
+    <a href="#exp">Expériences</a>
     <a href="#projects">Projets</a>
     <a href="#skills">Skills</a>
     <a href="#formations">Formations</a>
   </div>
 
-<container> 
+
   <header>
     <div class="avatar"><img src="img/avatar.png" alt="avatar">
       <h1>Keny Bapin</h1>
       <h3>Ingénieur Systèmes Freelance</h3>
-      <p class="contact">Paris, Ile-de-france | 0665687736 | keny.bapin@gmail.com</p>
+      <p class="contact">Paris, Ile-de-france | 06.65.68.77.36 | keny.bapin@gmail.com</p>
       <div class="links"><a href="javascript:window.print()">Imprimer mon CV</a><a href="https://www.linkedin.com/in/keny-bapin-94615779/" target="_blank">Linkedin</a><a href="https://github.com/kenybapin" target="_blank">Github</a></div>
-      <div id="exp"></div>
-    </div>
-    
+      <div class="about">
+        Avec plus de 5 ans d'expérience en tant qu'ingénieur système, je dirige mes compétences vers le domaine du DevOps. Mon activité se focalise principalement sur l'intégration continue, le déploiement automatisé, ainsi que sur la gestion des configurations et des infrastructures   </div>
   </header>
 
+  
+
+ <container>  
+  <div id="exp"></div>
+  <hr class="hr-1">
+  
   <section class="experience">
-    <h2>Expérience Professionnelle</h2>
+    <h2>Expériences</h2>
 
      <div class="infoBlock">
        <p class="company">Freelance</p>
        <p class="job">Ingénieur systèmes</p>
-       <p class="location"><span>2023</span>Paris, Ile-de-france</p>
-     </div><br>
+       <p class="location">2023 | Paris, Ile-de-france</p>
+      </div>
+
 
 
      <div class="infoBlock">
+      <img src="/img/eleclerc.jpg"> 
        <p class="company">Groupement d'Achats E.LECLERC</p>
        <p class="job">Ingénieur systèmes</p>
-       <p class="location"><span>2020 - 2022</span>CDI - Ivry-sur-Seine</p>
+       <p class="location">2020 - 2022 | CDI - Ivry-sur-Seine</p>
+       
      </div>
      <div class="description">
        <ul>
@@ -53,19 +65,20 @@
          <li>Automatiser et orchestrer l'installation de mises à jour sur Windows Server et Linux (Ansible)</li>
          <li>Refonte du processus de déploiement de serveurs : Automatisation (Ansible), Intégration continue (GitLab), création de machines virtuelles et d'images système (Vmware, Packer), intégration dans les différents outils de gestion d'infrastructure (Red Hat Satellite, Centreon, Keepass)</li>
          <li>Mise en place d'une plateforme dédiée à l'automatisation (AWX) : Création de procédures, formations equipes infrastructure et Support N2</li>
-         <p class="tools">Red Hat Entreprise, Redhat Satellite 6, AWX, Git, Packer, Terraform, Python, Vmware ESXi, Vmware vSphere, Azure Devops, Ansible, Jira</p>
+         <p class="tools">Red Hat Entreprise, Redhat Satellite 6, AWX, Git, Packer, Terraform, Python, Bash, Postgresql, Apache, Graylog, Vmware ESXi, Vmware vSphere, Azure Devops, Ansible, Jira</p>
        </ul>
      </div>
      
      <div class="infoBlock">
+      <img src="/img/totalenergies.png"> 
        <p class="company">Total Energies</p>
        <p class="job">Ingénieur de production</p>
-       <p class="location"><span>2019 - 2020</span>CDI - Paris</p>
+       <p class="location">2019 - 2020 | CDI - Paris</p>
      </div>
      <div class="description">
        <ul>
          <li>Support N2 et N3 (Linux), scripting, automatisation de taches correctives (Bash, Python) et monitoring (Dynatrace, ScienceLogic).</li>
-         <li>Maintient de la production : Mise en production applicative (Tomcat Wildfly,Jenkins), Maintenance préventive des applications et amélioration continue.</li>
+         <li>Mise en production applicative (Tomcat Wildfly,Jenkins), Maintenance préventive des applications et amélioration continue.</li>
          <li>Accompagnement d'une équipe métier dans le contexte d'une démarche DevOps : Collecte de logs, création de graphiques, gestion des alertes et envoi de rapport journalier (Elastic), Amélioration des procédures de mise en production (Red hat, Jenkins, Wildfy). Automatisation et intégration continue pour le déploiement de serveurs (Puppet, Bitbucket, Jenkins, Foreman)</li>
          <p class="tools">Foreman, Jenkins, Bitbucket, Sciencelogic, Dynatrace, Elastic, Puppet, Confluence, Jira, Python, Bash, Vmware, Redhat, Netapp, Apache, Docker, Postgresql, redhat Entreprise Linux, Tomcat Wildfly</p>
        </ul>
@@ -76,9 +89,10 @@
 
 
     <div class="infoBlock">
+      <img class="sfr" src="/img/sfr.jpg"> 
       <p class="company">SFR-Altice</p>
       <p class="job">Ingénieur d'exploitation applicative</p>
-      <p class="location"><span>2017 - 2019</span>CDI - Paris</p>
+      <p class="location">2017 - 2019 | CDI - Paris</p>
     </div>
     <div class="description">
       <ul>
@@ -90,23 +104,25 @@
     </div>
     
     <div class="infoBlock">
+      <img class="sfr" src="/img/sfr.jpg"> 
       <p class="company">SFR-Altice</p>
       <p class="job">Chef de projet - Ingénieur Systèmes</p>
-      <p class="location"><span>2014 - 2016</span>Contrat d'apprentissage - Paris</p>
+      <p class="location">2014 - 2016 | Contrat d'apprentissage - Paris</p>
     </div>
     <div class="description">
       <ul>
         <li>Chef de projet au sein de l'équipe Intégration et Validation. Pilotage de projets sur l'evolution et la non regression d'applications métier B2B (Eligibilité, Soucription, Portabilité, Installation). Suivi et pilotage des campagnes de refresh de bases de données</li>
-        <li>Ingénieur systèmes : Responsable des serveurs de l'environnment Intégration et validation, Support N2 sur Linux et Windows, Gestion et validation de l'infrastructure (modifications, ajouts et decomissionment de serveurs).</li>
+        <li>Responsable des serveurs de l'environnment Intégration et validation, Support N2 sur Linux et Windows, Gestion et validation de l'infrastructure (modifications, ajouts et decomissionment de serveurs).</li>
         <li>Projet d'automatisation des tests de non regression via Robot Framework et Selenium, création de procédures et formation des équipes.</li>
         <p class="tools">Redhat, Centos, Windows Server, Oracle 11g, Robot Framework, Selenium UI</p>
       </ul>
     </div>
     
     <div class="infoBlock">
+      <img class="miuny" src="/img/miunygames.png"> 
       <p class="company">MiunyGames</p>
       <p class="job">Ingénieur systèmes et virtualisation</p>
-      <p class="location"><span>2012 - 2013</span>Stage et CDD - Paris</p>
+      <p class="location">2012 - 2013 | Stage et CDD - Paris</p>
     </div>
     <div class="description">
       <ul>
@@ -116,85 +132,197 @@
     </div>
     
     <div class="infoBlock">
+      <img class="ministere" src="/img/ministere.png"> 
       <p class="company">Ministère des sports</p>
       <p class="job">Administrateur systèmes</p>
-      <p class="location"><span>2011</span>Stage - Paris</p>
+      <p class="location">2011 | Stage - Paris</p>
     </div>
     
     <div class="description">
       <ul>
         <li>Support et résolution d'incidents N1/N2 Windows 7 et Windows Server. Administration d'un annuaire Active directory. Participation à la migration d'un Windows Server 2003 vers 2011. Configuration d'images système via un serveur PXE (Symantec norton ghost)</li>
         <p class="tools">Windows Server 2003/2011, Windows 7, Northon Ghost, Redhat</p>
-        <div id="projects"></div>
+        
       </ul>
     </div>
   </section>        
   
   <div class="pagebreak"></div>
   
+  <div id="projects"></div>
+  <hr class="hr-1">
   
   <section class="projects">
     <h2>Réalisations techniques</h2>
-<li><a href="https://github.com/kenybapin/kubernetes-cluster-vagrant-ansible">Deploiment d'un cluster Kubernetes pret à l'emploi</a><br><span>Ansible, Vagrant, Ubuntu, VirtualBox, Kubernetes</span></li>
-<li><a href="https://github.com/kenybapin/cicd-pipeline-java-spring-docker">Pipeline CI/CD pour la production d'une application</a><br><span>Gitlab, Jenkins, Maven, Docker, Java Springboot</span></li>
-<li><a href="https://github.com/kenybapin/docker-flask-api">Conception d'une API REST avec PostgreSQL</a><br><span>Python, Flask, PostgreSQL, Docker</span></li>
-<li><a href="https://github.com/kenybapin/flask-spotify-app">Récapitulatif de vos préférences musicales sur Spotify</a><br><span>Python, Flask, HTML/CSS3, API Spotify</span></li>
-<li><a href="https://github.com/kenybapin/ansible-sys-updates">Gestion de mise à jour systèmes pour Windows et Linux</a><br><span>Ansible, Windows Server, Red Hat Enterprise</span></li>
-<li><a href="https://github.com/kenybapin/awx-install">Déploiement d'une plateforme AWX</a><br><span>Ansible, Vagrant, Virtualbox, Ubuntu, Docker, Kubernetes</span></li>
+    <ul>
+       <li><a href="https://github.com/kenybapin/kubernetes-cluster-vagrant-ansible">Deploiment d'un cluster Kubernetes pret à l'emploi</a></li>
+         <div class="ptools">Ansible Vagrant Ubuntu VirtualBox Kubernetes </div>
+       
+       <li><a href="https://github.com/kenybapin/cicd-pipeline-java-spring-docker">Pipeline CI/CD pour la production d'une application</a></li>
+       <div class="ptools">Gitlab Jenkins Maven</span><span>Docker</span><span>Java Springboot</div>
+       
+       <li><a href="https://github.com/kenybapin/docker-flask-api">Conception d'une API REST avec PostgreSQL</a></li>
+       <div class="ptools">Python Flask PostgreSQL</span><span>Docker</div>
+       
+       <li><a href="https://github.com/kenybapin/flask-spotify-app">Récapitulatif de vos préférences musicales sur Spotify</a></li>
+       <div class="ptools">Python Flask HTML/CSS3 API Spotify</div>
+       
+       <li><a href="https://github.com/kenybapin/ansible-sys-updates">Gestion de mise à jour systèmes pour Windows et Linux</a></li>
+       <div class="ptools">Ansible Windows Server Red Hat Enterprise</div>
+       
+       <li><a href="https://github.com/kenybapin/awx-install">Déploiement d'une plateforme AWX</a></li>
+       <div class="ptools">Ansible Vagrant Ubuntu Docker Kubernetes </div>
+       
+       <li><a href="https://github.com/kenybapin/GitHub-Profile-Card-Generator">Géneration d'une carte de visite d'un profile utilisaeur Github</a></li>
+       <div class="ptools">Python3 Flask API Github</div>
+       
+       <li><a href="#">Analyse et rapport de logs pour Linux</a></li>
+       <div class="ptools">Linux Bash</div>
+       
+       <li><a href="https://github.com/kenybapin/kenybapin.github.io">Creation d’un CV / portfolio en ligne</a></li>
+       <div class="ptools">HTML/CSS3</div>
+    </ul>
+  </section>
+
 <div id="skills"></div>
-</section>
-  
+  <hr class="hr-1">
 
   <section class="skills">
     <h2>Compétences</h2>
-    <li>Systèmes<br><span>GNU / Linux / Debian / Red Hat / CentOS</span></li>
-    <li>Langages</br><span>Python / Bash / HTML / CSS / PHP</span></li>
-    <li>Intégration et déploiement continue<br><span>Gitlab-CI / Azure Devops / Jenkins</span></li>
-    <li>Gestion d'infrastructure<br><span>Foreman / Redhat Satellite</span></li>
-    <li>Virtualisation<br><span>Xen / VMware ESXi / KVM</span></li>
-    <li>Conteneurs<br><span>Docker / Kubernetes</span></li>
-    <li>Monitoring<br><span>Dynatrace / Nagios / Elastic</span></li>
-    <li>Bases de données<br><span>PostgreSQL / MySQL / MongoDB</span></li>
-    <li>Services réseaux<br><span>Apache / Nginx / Iptables</span></li>
-    <li>Cloud Computing<br><span>Google Cloud Plateform</span></li>
-    <div id="formations"></div>
+    
+    <div class="skills-content">
+
+      <div class="progress-bars">
+   
+        <div class="skill-bar">
+          <div class="progress">
+              <div class="progress-bar" style="width: 85%;">Editeurs et formats de données</div>
+          </div>
+           </div>
+  
+         <div class="skill-bar">
+        <div class="progress">
+            <div class="progress-bar" style="width: 75%;">Linux</div>
+        </div>
+         </div>
+         
+         <div class="skill-bar">
+          <div class="progress">
+              <div class="progress-bar" style="width: 70%;">Gestion de configuration</div>
+          </div>
+           </div>
+  
+           <div class="skill-bar">
+            <div class="progress">
+                <div class="progress-bar" style="width: 60%;">Virtualisation</div>
+            </div>
+             </div>
+  
+         <div class="skill-bar">
+        <div class="progress">
+            <div class="progress-bar" style="width: 50%;">Programmation</div>
+        </div>
+         </div>
+  
+         <div class="skill-bar">
+        <div class="progress">
+            <div class="progress-bar" style="width: 50%;">CI/CD</div>
+        </div>
+         </div>
+  
+         <div class="skill-bar">
+          <div class="progress">
+              <div class="progress-bar" style="width: 50%;">Collecte de données</div>
+          </div>
+           </div>
+           
+           <div class="skill-bar">
+            <div class="progress">
+                <div class="progress-bar" style="width: 45%;">Bases de données</div>
+            </div>
+             </div>
+  
+           <div class="skill-bar">
+          <div class="progress">
+              <div class="progress-bar" style="width: 40%;">Conteneurisation</div>
+          </div>
+           </div>
+           
+           <div class="skill-bar">
+            <div class="progress">
+                <div class="progress-bar" style="width: 35%;">Cloud Computing</div>
+            </div>
+             </div>        
+       
+           <div class="skill-bar">
+            <div class="progress">
+                <div class="progress-bar" style="width: 30%;">Web et Réseau</div>
+            </div>
+             </div>
+  
+      </div>
+
+      <div class="apps">
+      <ul>
+        <li><span>VSCode</span><span>Vim</span><span>JSON</span><span>YAML</span><span>Tmux</span></li>
+        <li><span>Linux</span><span>Debian</span><span>Red Hat</span><span>Ubuntu</span></li>
+        <li><span>Ansible</span><span>Puppet</span><span>Terraform</span><span>Foreman</span></li>
+        <li><span>VMware ESXi</span><span>Xen</span><span>KVM</span><span>QEMU</span></li>
+        <li><span>Python</span><span>Bash</span><span>HTML</span><span>CSS</span><span>PHP</span></li>
+        <li><span>Gitlab-CI</span><span>Azure Devops</span><span>Jenkins</span></li>
+        <li><span>Dynatrace</span><span>Nagios</span><span>Elastic</span><span>Graylog</span><span>Log4j</span></li>
+        <li><span>PostgreSQL</span><span>MySQL</span><span>MongoDB</span></li>
+        <li><span>Docker</span><span>Kubernetes</span></li>
+        <li><span>Google Cloud Plateform</span></li>
+        <li><span>Apache</span><span>Nginx</span><span>Iptables</span></li>
+      </ul>
+    </div>
+   
+   
+
+
+  </div>
   </section>
 
   <div class="pagebreak"></div>
-  
+
+  <div id="formations"></div>
+  <hr class="hr-1">
   
   <section class="education">
-    <h2>Formations et langues</h2>
+    <h2>Formations</h2>
+            <div class="infoBlock">
+              <p class="diploma">TOEIC - Test of English for International Communication</p>
+              <p class="school">2016 | Niveau 4 (B2)</p>
+            </div>
             <div class="infoBlock">
               <p class="diploma">Master 2 - Systèmes réseaux et cloud computing</p>
-              <p class="school"><span>2016</span>Paris, Ecole Supérieure de Génie Informatique</p>
+              <p class="school">2016 | Paris, Ecole Supérieure de Génie Informatique</p>
             </div>
          
             <div class="infoBlock">
               <p class="diploma">Bachelor - Systèmes réseaux et cloud computing</p>
-              <p class="school"><span>2014</span>Paris, Ecole Supérieure de Génie Informatique</p>
+              <p class="school">2014 | Paris, Ecole Supérieure de Génie Informatique</p>
             </div>
           
             <div class="infoBlock">
               <p class="diploma">BTS - Service informatique aux orgnaisations</p>
-              <p class="school"><span>2013</span>Nogent-sur-marne, Lycée Louis Armand</p>
+              <p class="school">2013 | Nogent-sur-marne, Lycée Louis Armand</p>
             </div>
           
             <div class="infoBlock">
               <p class="diploma">BAC Général - Comptabilité et finances d'entreprise</p>
-              <p class="school"><span>2010</span>Rosny-sous-bois, Lycée Charles de gaulle</p>
-            </div><br>
-         
-            <div class="infoBlock">
-              <p class="school">Francais: langue maternelle<br>Anglais: niveau professionnel (TOEIC 830/990)</p>
+              <p class="school">2010 | Rosny-sous-bois, Lycée Charles de gaulle</p>
             </div>
+
           
   </section>
+
 
   <section class="hobbies">
     <h2>Centres d'interets</h2>
     <div>
-      <p>Nouvelles Technologies, Musique, Arts, Web Design, Cinéma, Jeux d'arcade</p>
+      <p>Nouvelles Technologies, Musique, Web Design, Science-Fiction, Jeux d'arcade</p>
       <br><br><br>
     </div>
   </section>
@@ -202,7 +330,7 @@
 </container> 
 
 <footer>
-  <p><a href="#top">top</a></p>
+  <p><a href="#top">Accueil</a></p>
   <p>© Keny Bapin</p>
 </footer>
 
