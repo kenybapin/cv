@@ -12,7 +12,7 @@ This project is a simple HTML and CSS resume page template. It is designed to sh
 ## Getting Started
 1. Clone the Repository:
 ```
-git clone https://github.com/your-username/resume-page.git
+git clone https://github.com/kenybapin/kenybapin.github.io.git
 ```
 2. Open the HTML File:\
 Open the index.html file in your preferred text editor or IDE to start customizing your resume content.
