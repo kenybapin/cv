@@ -13,6 +13,8 @@ p.tools {font-size: 14px !important;}
 container{width:100%!important;border-style:none!important;box-shadow:none!important}
 .education,.hobbies,.projects,.skills{line-height: 1 !important; padding:0!important;box-shadow:none!important;padding-bottom:15px!important;}
 li, p {font-size: 16px !important;}
+.expcontent {margin-bottom: 10px!important; border: none !important; box-shadow: none!important;}
+.experience li {font-size: 14px !important;}
 }
 
 
@@ -60,7 +62,7 @@ header .avatar{border-radius:50%}
 .avatar{padding-top:50px;margin: 0 auto;}
 header .avatar img{width:120px;height:120px;border:solid #333;border-radius:50%}
 h1{margin:0 0 1px;font-size:3rem;line-height:1}
-.description,h2{margin-left:10px}
+.description,h2{margin-left:10px; margin-right: 10px;}
 h3{margin-bottom:5px;font-size:1.5rem;font-weight:600;line-height:2rem}
 a,h2{font-weight:700}
 a{font-size:.9rem}
@@ -72,12 +74,12 @@ h2{margin-top:50px;margin-bottom:20px;text-transform:uppercase;font-size:1.5rem}
 p{margin:0}
 p.tools{padding-top:5px;padding-bottom:10px;font-size:.8rem}
 .education,.experience,.hobbies,.projects,.skills{margin-top:20px;margin-bottom:30px}
-.experience li{margin-bottom:8px;font-size:16px}
+.experience li{margin-bottom:8px;font-size:15px}
 .description{margin-top:7px; padding-bottom: 7px;}
-.infoBlock p.company{font-size: 16px; margin-top: 40px; margin-left:10px;font-weight:600}
+.infoBlock p.company{font-size: 16px; margin-top: 20px; margin-left:10px;font-weight:600}
 .infoBlock p.job{margin-bottom:0;margin-left:10px;font-size: 16px; font-weight:600}
 .education p,.infoBlock p.location,.projects li,.skills li{margin-bottom:3px;margin-left:10px}
-.infoBlock p.location{color:#505050;font-size:16px;margin-top:2px}
+.infoBlock p.location{color: #9c9c9c;font-size: 15px;margin-top: 2px;font-weight: 500;}
 .infoBlock p.location span, .infoBlock p.school span{background:#a7a7a7;padding-left:5px;padding-right:5px;padding-bottom:2px;padding-top:2px; margin-right:5px;font-size:.8rem;color:#fff;font-weight:600}
 ul{padding:0;list-style-type:none}
 .skills li{font-size:.9rem;color:#60a5ab;font-weight:700; margin-bottom: 20px;}
@@ -90,7 +92,9 @@ td{vertical-align:baseline}
 .infoBlock{text-align:left;font-size:.9rem;vertical-align:middle; padding-bottom: 10px;}
 .infoBlock p{padding-bottom:0}
 .infoBlock p.diploma{margin-bottom:0;padding:0;font-weight:700}
-.infoBlock img {display: block;float: right; clear: right; width: 100px;}
+.infoBlock img {margin-right: 10px; display: block;float: right; clear: right; width: 100px;}
+.expcontent {margin-bottom: 30px; border: 1px solid rgb(225, 225, 225); border-radius: 10px; box-shadow: 2px 2px #eeeeee;}
+
 hr.hr-1 {border: 1px solid #ccc; margin-top: 50px; margin-bottom: 50px;margin-left: 20px; margin-right: 20px;}
 img.sfr {width: 30px;}
 img.ministere {width: 60px;}
@@ -105,3 +109,4 @@ footer a{color:#919191;text-align:center!important;text-decoration:underline}
 .skill-bar {margin-bottom: 10px;}
 .progress {background-color: #ebebeb;overflow: hidden;border-radius: 10px; }
 .progress-bar {padding: 6px;height: 100%;padding-left: 12px;font-size: small;background-color:#60a5ab; border-radius: 10px;transition: width 0.6s ease; color: white;}
+
