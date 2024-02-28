@@ -4,6 +4,8 @@
 
 This project is a simple HTML and CSS resume page template. It is designed to showcase your professional experience, skills, and education in a clean and organized layout.
 
+![image info](./img/preview.png)
+
 ## Features
 - Responsive Design: The resume page is responsive and adapts to different screen sizes, making it accessible across various devices.
 - Customizable: You can easily customize the content, styling, and layout to match your personal preferences and professional needs.
