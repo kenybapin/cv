@@ -2,7 +2,8 @@
 
 ## Overview
 
-This project is a simple HTML and CSS resume page template. It is designed to showcase your professional experience, skills, and education in a clean and organized layout.
+This project is a simple HTML and CSS resume page template, I'm using it to publish my own personal resume. \
+It is designed to present your professional experience, skills, and education in a clean and organized layout.
 
 ![image info](./img/preview.png)
 
