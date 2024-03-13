@@ -24,6 +24,8 @@
   </div>
 
 
+
+
   
 
   <header>
@@ -32,14 +34,46 @@
       <h3>Ingénieur Systèmes Freelance</h3>
       <p class="contact">Paris, Ile-de-france | keny.bapin@gmail.com</p>
       <div class="links"><a href="javascript:window.print()">Imprimer mon CV</a><a href="https://www.linkedin.com/in/keny-bapin-94615779/" target="_blank">Linkedin</a><a href="https://github.com/kenybapin" target="_blank">Github</a>
+      
+        <div class="switchbox">
+          ☀︎
+          <label class="switch">
+            <input type="checkbox" id="modeSwitch">
+            <span class="slider"></span>
+          </label>
+          ☾
+        </div>
+      
+        <script>
+          const toggleSwitch = document.querySelector('#modeSwitch');
+        
+          function switchTheme(e) {
+            if (e.target.checked) {
+              document.documentElement.setAttribute('data-theme', 'dark');
+              document.body.classList.add('dark-mode');
+            } else {
+              document.documentElement.setAttribute('data-theme', 'light');
+              document.body.classList.remove('dark-mode');
+            }    
+          }
+        
+          toggleSwitch.addEventListener('change', switchTheme, false);
+        </script>
+      
       </div>
       
       <div class="about">
-        <p>Avec plus de 5 ans d'expérience en tant qu'ingénieur système, mon activité se focalise principalement sur l'intégration continue, le déploiement automatisé, ainsi que sur la gestion des configurations et des infrastructures.</p>  
-      </div>
+        <p class="about">Avec plus de 5 ans d'expérience en tant qu'ingénieur système, mon activité se focalise principalement sur l'intégration continue, le déploiement automatisé, ainsi que sur la gestion des configurations et d'infrastructures.</p>  
       
-
+        
+      
+      </div>
+  
   </header>
+
+  
+
+
 
  <container>  
   <div id="exp"></div>
@@ -57,7 +91,7 @@
 
   <div class="expcontent">
      <div class="infoBlock">
-      <img src="/img/eleclerc.jpg"> 
+      <img src="/img/eleclerc.png"> 
        <p class="company">GALEC - E.LECLERC</p>
        <p class="job">Ingénieur systèmes</p>
        <p class="location">2020 - 2022 | CDI - Ivry-sur-Seine</p>
@@ -174,10 +208,10 @@
          <div class="ptools">Ansible Vagrant Ubuntu VirtualBox Kubernetes </div>
        
        <li><a href="https://github.com/kenybapin/cicd-pipeline-java-spring-docker">Pipeline CI/CD pour la production d'une application</a></li>
-       <div class="ptools">Gitlab Jenkins Maven</span><span>Docker</span><span>Java Springboot</div>
+       <div class="ptools">Gitlab Jenkins Maven Docker Java Springboot</div>
        
        <li><a href="https://github.com/kenybapin/docker-flask-api">Conception d'une API REST avec PostgreSQL</a></li>
-       <div class="ptools">Python Flask PostgreSQL</span><span>Docker</div>
+       <div class="ptools">Python Flask PostgreSQL Docker</div>
        
        <li><a href="https://github.com/kenybapin/flask-spotify-app">Récapitulatif de vos préférences musicales sur Spotify</a></li>
        <div class="ptools">Python Flask HTML/CSS3 API Spotify</div>
