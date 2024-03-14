@@ -16,7 +16,7 @@ p.tools {font-size: 14px !important; color:#505459 !important;}
 container{width:100%!important;border-style:none!important;box-shadow:none!important}
 .education,.hobbies,.projects,.skills{line-height: 1 !important; padding:0!important;box-shadow:none!important;padding-bottom:15px!important;}
 li, p, span {font-size: 16px !important; color:#505459 !important;}
-.expcontent {margin-bottom: 10px!important; border: none !important; box-shadow: none!important;}
+.expcontent {margin-bottom: 10px!important; border: none !important; box-shadow: none!important; background-color: transparent !important;}
 .experience li {font-size: 14px !important;}
 }
 
@@ -96,7 +96,7 @@ td{vertical-align:baseline}
 .infoBlock p{padding-bottom:0}
 .infoBlock p.diploma{margin-bottom:0;padding:0;font-weight:700}
 .infoBlock img {margin-right: 10px; display: block;float: right; clear: right; width: 100px;}
-.expcontent {margin-bottom: 30px; border: 1px solid rgb(225, 225, 225); border-radius: 10px;}
+.expcontent {margin-bottom: 30px; border: 1px solid rgb(225, 225, 225); border-radius: 10px;background-color: #f8f8f8;}
 
 hr.hr-1 {border: 1px solid #ccc; margin-top: 50px; margin-bottom: 50px;margin-left: 20px; margin-right: 20px;}
 img.sfr {width: 30px;}
@@ -114,76 +114,28 @@ footer a{color:#919191;text-align:center!important;text-decoration:underline}
 .progress-bar {padding: 6px;height: 100%;padding-left: 12px;font-size: small;background-color:#60a5ab; border-radius: 10px;transition: width 0.6s ease; color: white;}
 
 
-.switchbox {
-    margin-top: 25px;
-    text-align: center;
-    vertical-align: middle;
-  }
+.switchbox {margin-top: 25px;text-align: center;vertical-align: middle;}
+.switch {position: relative;display: inline-block;width: 40px;height: 24px;}
+.switch input { opacity: 0; width: 0; height: 0; }
+.slider { position: absolute; cursor: pointer; top: 0; left: 0; right: 0; bottom: 0; background-color: #ccc; -webkit-transition: .4s; transition: .4s;  border-radius: 34px; }
+.slider:before { position: absolute; content: ""; height: 16px; width: 16px; left: 4px; bottom: 4px; background-color: white; -webkit-transition: .4s; transition: .4s; border-radius: 50%; }
+input:checked + .slider { background-color: #60a5ab;}
+input:checked + .slider:before {-webkit-transform: translateX(16px);-ms-transform: translateX(16px);transform: translateX(16px);}
 
-.switch {
-    position: relative;
-    display: inline-block;
-    width: 40px;
-    height: 24px;
-  }
-  
-  .switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-  }
-  
-  .slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ccc;
-    -webkit-transition: .4s;
-    transition: .4s;
-    border-radius: 34px;
-  }
-  
-  .slider:before {
-    position: absolute;
-    content: "";
-    height: 16px;
-    width: 16px;
-    left: 4px;
-    bottom: 4px;
-    background-color: white;
-    -webkit-transition: .4s;
-    transition: .4s;
-    border-radius: 50%;
-  }
-  
-  input:checked + .slider {
-    background-color: #60a5ab;
-  }
-  
-  input:checked + .slider:before {
-    -webkit-transform: translateX(16px);
-    -ms-transform: translateX(16px);
-    transform: translateX(16px);
-  }
-  
-  /* Dark mode styles */
-  body.dark-mode, body.dark-mode container {background-color: black; color: rgb(223, 223, 223); }
-  body.dark-mode header {display:block;text-align:center;background: linear-gradient(0deg, rgb(0, 0, 0) 40%, rgb(8, 57, 42) 100%);}
-  body.dark-mode h1 { color: white;}
-  body.dark-mode h2 { color: white;}
-  body.dark-mode h3 { color: white;}
-  body.dark-mode p.about { color: rgb(223, 223, 223);}
-  body.dark-mode .ptools { color: rgb(223, 223, 223);}
-  body.dark-mode li { color: rgb(223, 223, 223);}
-  body.dark-mode .ptools span { color: rgb(223, 223, 223);}
-  body.dark-mode .apps span { color: rgb(223, 223, 223); border: 1px solid rgb(87, 87, 87);}
-  body.dark-mode p.school { color: rgb(223, 223, 223);}
-  body.dark-mode p.job { color: #c5c5c5;}
-  body.dark-mode .hobbies p { color: rgb(223, 223, 223);}
-  body.dark-mode .expcontent { border: 1px solid rgb(36, 36, 36);}
-  body.dark-mode .progress { background-color: #151515;}
-
+/* Dark mode styles */
+body.dark-mode, body.dark-mode container {background-color: black; color: rgb(223, 223, 223); }
+body.dark-mode header {display:block;text-align:center;background: linear-gradient(0deg, rgb(0, 0, 0) 40%, rgb(8, 57, 42) 100%);}
+body.dark-mode h1 { color: white;}
+body.dark-mode h2 { color: white;}
+body.dark-mode h3 { color: white;}
+body.dark-mode p.about { color: rgb(223, 223, 223);}
+body.dark-mode .ptools { color: rgb(223, 223, 223);}
+body.dark-mode li { color: rgb(223, 223, 223);}
+body.dark-mode .ptools span { color: rgb(223, 223, 223);}
+body.dark-mode .apps span { color: rgb(223, 223, 223); border: 1px solid rgb(87, 87, 87);}
+body.dark-mode p.school { color: rgb(223, 223, 223);}
+body.dark-mode p.job { color: #c5c5c5;}
+body.dark-mode .hobbies p { color: rgb(223, 223, 223);}
+body.dark-mode .expcontent { border: 1px solid rgb(36, 36, 36);background-color: #252525}
+body.dark-mode .progress { background-color: #252525;}
 
