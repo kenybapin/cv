@@ -96,7 +96,7 @@ td{vertical-align:baseline}
 .infoBlock p{padding-bottom:0}
 .infoBlock p.diploma{margin-bottom:0;padding:0;font-weight:700}
 .infoBlock img {margin-right: 10px; display: block;float: right; clear: right; width: 100px;}
-.expcontent {margin-bottom: 30px; border: 1px solid rgb(225, 225, 225); border-radius: 10px;background-color: #f8f8f8;}
+.expcontent {margin-bottom: 30px; border-bottom: 1px solid rgb(225, 225, 225); }
 
 hr.hr-1 {border: 1px solid #ccc; margin-top: 50px; margin-bottom: 50px;margin-left: 20px; margin-right: 20px;}
 img.sfr {width: 30px;}
@@ -136,6 +136,6 @@ body.dark-mode .apps span { color: rgb(223, 223, 223); border: 1px solid rgb(87,
 body.dark-mode p.school { color: rgb(223, 223, 223);}
 body.dark-mode p.job { color: #c5c5c5;}
 body.dark-mode .hobbies p { color: rgb(223, 223, 223);}
-body.dark-mode .expcontent { border: 1px solid rgb(36, 36, 36);background-color: #252525}
+body.dark-mode .expcontent { border-bottom: 1px solid rgb(58, 58, 58);}
 body.dark-mode .progress { background-color: #252525;}
 
