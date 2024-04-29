@@ -108,7 +108,7 @@ footer p{padding-top:20px;color:#c1c1c1}
 footer a{color:#919191;text-align:center!important;text-decoration:underline}
 
 .skills-content {display: grid; grid-template-columns: 1fr 1fr; grid-gap: 20px ;}
-.progress-bars { margin-left: 10px;}
+.progress-bars { margin-left: 10px;margin-right: 10px;}
 .skill-bar {margin-bottom: 10px;}
 .progress {background-color: #ebebeb;overflow: hidden;border-radius: 10px; }
 .progress-bar {padding: 6px;height: 100%;padding-left: 12px;font-size: small;background-color:#60a5ab; border-radius: 10px;transition: width 0.6s ease; color: white;}
