@@ -2,11 +2,11 @@
 *{margin-left:0!important;margin-top:0!important;font-family: Arial, Helvetica, sans-serif;}
 .pagebreak{page-break-before:always!important;}
 header {background: transparent !important; background-image: none !important; text-align: left!important;}
-body,container,html{padding:0!important;background:#fff!important;}
+body,container,html{zoom: 0.9; padding:0!important;background:#fff!important;}
 p.contact{margin-bottom: 50px!important;}
 h1,h2,h3{color:#505459!important;}
 .avatar,body,container,footer,header,section{margin-bottom: 0 !important;padding:0!important;padding:0!important}
-.avatar img,.icon,.links,.navbar,footer,p.contact span, hr, .about, img, .switchbox {margin: 0 !important; display:none!important}
+.avatar img,.icon,.links,.navbar,footer,p.contact span, hr, .about, img, .switchbox, .circle-button, .theme-toggle {margin: 0 !important; display:none!important}
 h2{font-size:20px!important; padding-bottom: 10px !important;}
 h1{font-size:30px!important;}
 body.dark-mode * { color: #505459 !important;}
@@ -125,6 +125,7 @@ input:checked + .slider:before {-webkit-transform: translateX(16px);-ms-transfor
 /* Dark mode styles */
 body.dark-mode, body.dark-mode container {background-color: black; color: rgb(223, 223, 223); }
 body.dark-mode header {display:block;text-align:center;background: linear-gradient(0deg, rgb(0, 0, 0) 40%, rgb(8, 57, 42) 100%);}
+body.dark-mode .avatar img { border: solid rgb(160, 160, 160);}
 body.dark-mode h1 { color: white;}
 body.dark-mode h2 { color: white;}
 body.dark-mode h3 { color: white;}
@@ -139,3 +140,54 @@ body.dark-mode .hobbies p { color: rgb(223, 223, 223);}
 body.dark-mode .expcontent { border-bottom: 1px solid rgb(58, 58, 58);}
 body.dark-mode .progress { background-color: #252525;}
 
+
+
+  /* Floating Circle Button */
+  .theme-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999; /* Ensure it is above all elements */
+  }
+  
+  .circle-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #333; /* Default to dark mode (moon) */
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+    font-size: 24px;
+    color: #fff;
+  }
+  
+  #modeSwitch {
+    display: none;
+  }
+  
+  /* Initially display the moon */
+  .sun {
+    display: none;
+  }
+  
+  .moon {
+    display: inline-block;
+  }
+  
+  /* When the switch is clicked (light mode), show the sun */
+  #modeSwitch:checked + .circle-button {
+    background-color: #3cb7ff;
+  }
+  
+  #modeSwitch:checked + .circle-button .sun {
+    display: inline-block;
+  }
+  
+  #modeSwitch:checked + .circle-button .moon {
+    display: none;
+  }
+  
