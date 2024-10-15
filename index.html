@@ -15,6 +15,13 @@
 
 <body>
 
+  <div class="theme-toggle">
+    <input type="checkbox" id="modeSwitch">
+    <label for="modeSwitch" class="circle-button">
+      <span class="sun">&#x2600;</span> <!-- Sun symbol -->
+      <span class="moon">&#x1F319;</span> <!-- Moon symbol -->
+    </label>
+  </div>
 
   <div class="navbar">
     <a href="#exp">Exp.</a>
@@ -35,14 +42,7 @@
       <p class="contact">Paris, Ile-de-france | keny.bapin@gmail.com</p>
       <div class="links"><a href="javascript:window.print()">Imprimer mon CV</a><a href="https://www.linkedin.com/in/keny-bapin-94615779/" target="_blank">Linkedin</a><a href="https://github.com/kenybapin" target="_blank">Github</a>
       
-        <div class="switchbox">
-          ☀︎
-          <label class="switch">
-            <input type="checkbox" id="modeSwitch">
-            <span class="slider"></span>
-          </label>
-          ☾
-        </div>
+
       
         <script>
           const toggleSwitch = document.querySelector('#modeSwitch');
